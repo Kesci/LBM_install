@@ -11,4 +11,6 @@
  ## 项目说明
  为在 ubuntu 20.04 系统下快速安装本模型软件，进行了如下配置修正与更改
 
- 
+ - 在 `Lmake.inc` 文件中设定了系统类型
+ - 在 `model/bin/` 与 `/model/lib` 下保留编译所需的空文件夹
+ - 修改 `model/src/sysdep/Makedef.linux` 中命令接口定义

@@ -15,11 +15,11 @@ SYSLIBINC       = yy$(SYSTEM).o
 #SYSLIB          = -lc
 
 # MAKE		= make
-CC		= cc
+CC		= gcc
 #FC		= g77
 #LD		= g77
-FC		= f77
-LD		= f77
+FC		= gfortran
+LD		= gfortran
 AR		= ar vru
 RM		= rm -f
 CP		= cp
