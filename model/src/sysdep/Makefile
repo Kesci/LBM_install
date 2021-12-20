@@ -25,8 +25,8 @@ SRCS_ALL      = y$(SYSTEM).F
 
 all: lib
 
-lib:	$(OBJS) yyLinux.c
-		$(CC) -c yyLinux.c
+lib:	$(OBJS) yy$(SYSTEM).c
+        $(CC) -c yy$(SYSTEM).c
 		$(AR) $(LIBRARY) $(OBJS)
 		$(RANLIB) $(LIBRARY)
 

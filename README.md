@@ -20,10 +20,7 @@
 更多业务参数修改，如分辨率等，参考 Lmake.inc 文件，按顺序执行下列命令
 ```shell
 sudo apt-get install build-essential
-sudo apt-get install libc6-dev
-sudo apt-get install zlib1g-dev libssl-dev
 sudo apt-get install gfortran
-sudo apt-get install libnetcdf-dev libnetcdff-dev
-export LNHOME=~/ln_solver
+export LNHOME=~/LBM_install
 
 ```
