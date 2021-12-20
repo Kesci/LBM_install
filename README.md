@@ -14,3 +14,11 @@
  - 在 `Lmake.inc` 文件中设定了系统类型
  - 在 `model/bin/` 与 `/model/lib` 下保留编译所需的空文件夹
  - 修改 `model/src/sysdep/Makedef.linux` 中命令接口定义
+ - 修改 `model/src/sysdep/Makefile` 加入 C 代码编译流程
+
+##  安装说明
+更多业务参数修改，如分辨率等，参考 Lmake.inc 文件，按顺序执行下列命令
+```shell
+export LNHOME=~/ln_solver
+
+```
