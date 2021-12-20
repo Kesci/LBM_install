@@ -1,0 +1,63 @@
+ &nmfin cfm='/home/tropics/hiro/ln_solver/data/frc/frc.mat',
+        cfg='/home/tropics/hiro/ln_solver/data/frc/frc.grd'
+        fact=1.0,1.0,1.0,1.0,1.0
+ &end
+
+ &nmfgt cfs='/home/q16655/ln_solver/data/out/psi',
+        cfc='/home/q16655/ln_solver/data/out/chi',
+        cfu='/home/q16655/ln_solver/data/out/u',
+        cfv='/home/q16655/ln_solver/data/out/v',
+        cfw='/home/q16655/ln_solver/data/out/w',
+        cft='/home/q16655/ln_solver/data/out/t',
+        cfz='/home/q16655/ln_solver/data/out/z',
+        cfp='/home/q16655/ln_solver/data/out/p',
+        cfq='/home/q16655/ln_solver/data/out/q',
+        cfx='/home/q16655/ln_solver/data/out/dt',
+        cfy='/home/q16655/ln_solver/data/out/dq',
+        cfo='/home/q16655/ln_solver/data/svec/linear.mjo1.grd',
+        fact=1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+        opl=f,
+ &end
+
+ &nmbs  cbs0='/home/q16655/ln_solver/bs/gt3/ncepwin.t21l11zm.sy',
+        cbs='/home/q16655/ln_solver/bs/grads/ncepwin.t21l11zm.sy.grd'
+ &end
+
+ &nmncp cncep='/home/q16655/ln_solver/bs/ncep/ncep.clim.y58-97.t21.grd',
+        cncep2='/home/q16655/ln_solver/bs/ncep/ncep.clim.y58-97.ps.t21.grd',
+        calt='/home/q16655/ln_solver/bs/gt3/grz.t21',
+        kmo=12, navg=3, ozm=f, osw=f, ousez=t
+ &end
+
+ &nmecm cecm='/home/hiro/ln_solver/bs/ecmwf/ERA40.clim.t21.grd',
+        calt='/home/hiro/ln_solver/bs/gt3/grz.t21',
+        kmo=12, navg=3, ozm=f, osw=f
+ &end
+
+ &nmvar ovor=f, odiv=f, otmp=t, ops=f, osph=f
+ &end
+
+ &nmhpr khpr=1,
+        hamp=1.,
+        xdil=40.,
+        ydil=12.,
+        xcnt=210.,
+        ycnt=0.
+ &end
+
+ &nmvpr kvpr=2,
+        vamp=8,
+        vdil=20.,
+        vcnt=0.45
+ &end
+
+ &nmred cdr='/home/q16655/ln_solver/matrix.moi',
+        cfo='/home/q16655/ln_solver/matrix.moi/mat/MAT.t21l11m6.ncepannzm.moi.tmp.dat'
+ &end
+
+ &nmall owall=t
+ &end
+
+ &nmcls oclassic=f
+ &end
+
