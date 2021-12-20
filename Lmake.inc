@@ -3,7 +3,7 @@
 # set environment LNHOME	in your .cshrc
 #
 ###### Architecture          ################
-ARC  = sun
+ARC  = linux
 #ARC  = alpha
 #ARC  = sgi
 #ARC  = sr8000
