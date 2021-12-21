@@ -132,3 +132,4 @@ dmypy.json
 model_file/pretrain/checkpoint
 *.pb
 *.data-00000-of-00001
+.vscode/
