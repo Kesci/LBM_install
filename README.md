@@ -37,4 +37,9 @@ sed -i '/lib: lapacklib tmglib/d' ./Makefile
 make -j
 cd ~/LBM_install/solver/util/
 make bs
+export GFORTRAN_CONVERT_UNIT='big_endian'
 ```
+
+## 使用说明
+修改 `~/LBM_install/solver/util/SETPAR`  
+二进制文件在 `~/LBM_install/solver/util/ncepsbs`
