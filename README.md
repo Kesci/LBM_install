@@ -24,4 +24,17 @@ sudo apt-get install gfortran
 export LNHOME=~/LBM_install
 cd LBM_install/model/src/
 make lib
+cd ~/LBM_install/bs
+wget https://file-1258430491.cos.ap-shanghai.myqcloud.com/lbm_data.zip
+unzip lbm_data.zip
+rm lbm_data.zip
+cd ~
+wget https://github.com/Reference-LAPACK/lapack/archive/refs/tags/v3.10.0.tar.gz
+cd lapack-3.10.0/
+cp make.inc.example make.inc
+sed -i '/lib: lapacklib tmglib/alib: blaslib variants lapacklib tmglib' ./Makefile
+sed -i '/lib: lapacklib tmglib/d' ./Makefile
+make -j
+export LAPACK_HOME=~/lapack-3.10.0
+
 ```
