@@ -22,5 +22,6 @@
 sudo apt-get install build-essential
 sudo apt-get install gfortran
 export LNHOME=~/LBM_install
-
+cd LBM_install/model/src/
+make lib
 ```
