@@ -29,9 +29,9 @@ MV   = mv -f
 #  machine-specific, optimized BLAS library should be used whenever
 #  possible.)
 #
-BLASLIB      = $LAPACK_HOME/librefblas.a
-LAPACKLIB    = $LAPACK_HOME/liblapack.a
-TMGLIB       = $LAPACK_HOME/libtmglib.a
+BLASLIB      = ~/lapack-3.10.0/librefblas.a
+LAPACKLIB    = ~/$LAPACK_HOME/liblapack.a
+TMGLIB       = ~/libtmglib.a
 #EIGSRCLIB    = 
 #
 #  LBM library

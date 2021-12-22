@@ -35,6 +35,6 @@ cp make.inc.example make.inc
 sed -i '/lib: lapacklib tmglib/alib: blaslib variants lapacklib tmglib' ./Makefile
 sed -i '/lib: lapacklib tmglib/d' ./Makefile
 make -j
-export LAPACK_HOME=~/lapack-3.10.0
-
+cd ~/LBM_install/solver/util/
+make bs
 ```
