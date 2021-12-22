@@ -30,7 +30,7 @@ MV   = mv -f
 #  possible.)
 #
 BLASLIB      = ~/lapack-3.10.0/librefblas.a
-LAPACKLIB    = ~/$LAPACK_HOME/liblapack.a
+LAPACKLIB    = ~/liblapack.a
 TMGLIB       = ~/libtmglib.a
 #EIGSRCLIB    = 
 #
