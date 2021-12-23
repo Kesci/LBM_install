@@ -11,7 +11,7 @@ RUN apt-get install -y build-essential && apt-get -y install gfortran && apt-get
 RUN cd opt && git clone https://github.com/WidgetA/LBM_install.git
 RUN cd /opt/LBM_install/model/src/ && make lib
 RUN apt-get install wget unzip -y && cd /opt/LBM_install/bs && wget https://file-1258430491.cos.ap-shanghai.myqcloud.com/lbm_data.zip && unzip lbm_data.zip && rm lbm_data.zip
-RUN apt-get install wget -y && cd /opt && wget https://github.com/Reference-LAPACK/lapack/archive/refs/tags/v3.10.0.tar.gz
+RUN apt-get install wget -y && cd /opt && wget https://github.com/Reference-LAPACK/lapack/archive/refs/tags/v3.10.0.tar.gz && tar -zxvf v3.10.0.tar.gz
 
 ENV LAPACK_HOME /opt/lapack-3.10.0
 ENV GFORTRAN_CONVERT_UNIT 'big_endian'
