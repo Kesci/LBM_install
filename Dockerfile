@@ -15,5 +15,6 @@ RUN apt-get install wget -y && cd /opt && wget https://github.com/Reference-LAPA
 
 ENV LAPACK_HOME /opt/lapack-3.10.0
 ENV GFORTRAN_CONVERT_UNIT 'big_endian'
+RUN apt-get install -y python3
 RUN cd /opt/lapack-3.10.0/ && cp make.inc.example make.inc && sed -i '/lib: lapacklib tmglib/alib: blaslib variants lapacklib tmglib' ./Makefile && sed -i '/lib: lapacklib tmglib/d' ./Makefile && make -j
 RUN cd /opt/LBM_install/solver/util/ && make bs
