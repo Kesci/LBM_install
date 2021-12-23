@@ -8,7 +8,7 @@ ENV TZ=Asia/Shanghai
 ENV LNHOME /opt/LBM_install
 RUN apt-get update && apt-get -y upgrade && apt-get autoremove && apt-get autoclean
 RUN apt-get install -y build-essential && apt-get -y install gfortran && apt-get -y install git
-RUN git clone https://github.com/WidgetA/LBM_install.git
+RUN cd opt && git clone https://github.com/WidgetA/LBM_install.git
 RUN cd LBM_install/model/src/ && make lib
 RUN cd /opt/LBM_install/bs && wget https://file-1258430491.cos.ap-shanghai.myqcloud.com/lbm_data.zip && unzip lbm_data.zip && rm lbm_data.zip
 RUN cd /opt && wget https://github.com/Reference-LAPACK/lapack/archive/refs/tags/v3.10.0.tar.gz
